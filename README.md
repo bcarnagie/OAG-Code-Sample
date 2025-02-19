@@ -13,11 +13,6 @@ This analysis aims to determine the total number of **screening and preventive m
 ## Background  
 Mammography is a critical tool in the early detection of **breast cancer**, with **screening mammograms** recommended for early detection in asymptomatic patients. Medicare and other health programs cover screening mammograms to promote **preventive healthcare**. By analyzing claims data, we can evaluate the **volume and accessibility** of these services across different patient populations.
 
-## Data Sources  
-This analysis uses **Medicare claims data** from two sources:
-- **ptb_noninst_line_2021** – Contains claims for services provided in **outpatient settings** (non-institutional claims).
-- **ptb_inst_revenue_2021** – Includes claims from **hospitals and other institutional providers**.
-
 ## Methodology  
 1. **Extracting Relevant Claims:** Claims are filtered using **Healthcare Common Procedure Coding System (HCPCS) codes** that identify mammography procedures.
 2. **Filtering Data:** Claims that only bill for the **professional component (modifier ‘26’)** are removed to focus on complete service events.
@@ -41,7 +36,7 @@ This analysis will help policymakers, healthcare providers, and researchers:
 - Identify **potential gaps in preventive screening coverage**.
 
 ## Generating Synthetic Data
-This repository includes a Python script to generate synthetic Medicare claims data for mammography screenings.
+This repository includes a Python script to generate synthetic Medicare claims data for mammography screenings.The csv generated can be used to test the SQL query.
 
 ### Run Locally (VS Code, Terminal, Jupyter)
 
