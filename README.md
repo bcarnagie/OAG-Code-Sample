@@ -40,6 +40,45 @@ This analysis will help policymakers, healthcare providers, and researchers:
 - Assess **preventive healthcare access** across different patient demographics.
 - Identify **potential gaps in preventive screening coverage**.
 
+## Generating Synthetic Data
+This repository includes a Python script to generate synthetic Medicare claims data for mammography screenings.
+
+### Run Locally (VS Code, Terminal, Jupyter)
+
+1. Ensure Python is installed.
+
+2. Install dependencies:
+
+`pip install pandas`
+
+3. Run the script:
+
+`python generate_synthetic_data.py`
+
+4. The dataset will be saved to your local machine.
+
+  * Windows Users: The file will be in your current directory. If you get a permission error, update the script to save in `C:\Users\YourName\Documents\:`
+
+    `df.to_csv("C:/Users/YourName/Documents/synthetic_mammography_claims.csv", index=False)`
+
+  * Mac/Linux Users: Use a valid writable directory, such as:
+
+    `df.to_csv("/Users/yourname/Documents/synthetic_mammography_claims.csv", index=False)`
+
+### Run in Google Colab (No Installation Needed)
+
+1. Click the button below to run the script in the cloud.
+
+2. After running, download the CSV manually:
+
+`from google.colab import files`
+`files.download("/content/synthetic_mammography_claims_sql_compatible.csv")`
+
+### 🛠 Troubleshooting
+
+❌ Permission Denied / Read-Only Error?
+✔️ Ensure the script saves the file in a writable folder on your machine.
+
 ## Additional Notes  
 - This analysis follows **Medicare guidelines** for preventive screening services.
 - The methodology ensures an accurate count by **removing duplicates** and grouping related services.
