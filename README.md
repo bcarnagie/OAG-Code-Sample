@@ -35,8 +35,25 @@ This analysis will help policymakers, healthcare providers, and researchers:
 - Assess **preventive healthcare access** across different patient demographics.
 - Identify **potential gaps in preventive screening coverage**.
 
+## 🔄 How This Works
+
+This repository consists of **two main components**:
+
+1. **Python Script (`generate_synthetic_data.py`)**  
+   - Generates a **synthetic dataset** that mimics Medicare claims data.  
+   - Saves the dataset as **`synthetic_mammography_claims_sql_compatible.csv`**.  
+   - This dataset serves as the **source table** for SQL analysis.
+
+2. **SQL Analysis (`mammography_analysis.sql`)**  
+   - Runs queries on the **synthetic dataset** to analyze **screening mammographies**.  
+   - The dataset is **imported into SQL as `mammography_claims`** before running queries.  
+
+**🛠 Workflow:**
+1. **Run the Python script** to generate `synthetic_mammography_claims_sql_compatible.csv`.  
+2. **Import the CSV into your SQL database**.  
+3. **Run the SQL script**, which queries `mammography_claims`.
+
 ## Generating Synthetic Data
-This repository includes a Python script to generate synthetic Medicare claims data for mammography screenings.The csv generated can be used to test the SQL query.
 
 ### Run Locally (VS Code, Terminal, Jupyter)
 
