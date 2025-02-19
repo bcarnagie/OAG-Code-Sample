@@ -3,6 +3,10 @@
 ## Author: Brianna Carnagie  
 **Organization:** Centers for Medicare and Medicaid Services 
 
+## Data Disclaimer
+⚠️ **This project does NOT include real CMS data.**  
+For security and compliance reasons, all data references have been replaced with **synthetic placeholders**.
+
 ## Objective  
 This analysis aims to determine the total number of **screening and preventive mammograms** performed in **Fiscal Year 2021**. The goal is to understand the utilization of these services and identify trends in healthcare access and preventive care.
 
@@ -39,5 +43,4 @@ This analysis will help policymakers, healthcare providers, and researchers:
 ## Additional Notes  
 - This analysis follows **Medicare guidelines** for preventive screening services.
 - The methodology ensures an accurate count by **removing duplicates** and grouping related services.
-- Future work could expand on this analysis by incorporating **patient demographics**, **geographic distribution**, or **provider-specific trends** to gain deeper insights.
 
