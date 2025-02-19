@@ -52,8 +52,7 @@ df = pd.DataFrame({
     'modifiers': modifiers
 })
 
-
 # Save file
-df.to_csv("synthetic_mammography_claims_sql.csv", index=False)
+df.to_csv("/your/path/to/save/synthetic_mammography_claims_sql_compatible.csv", index=False)
 
 print("✅ Synthetic dataset created: synthetic_mammography_claims_sql.csv")
