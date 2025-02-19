@@ -23,7 +23,7 @@ FROM (
         NCH_CLM_TYPE_CD,
         'NONINST' AS clm_source,
         hcpcs_1st_mdfr_cd, hcpcs_2nd_mdfr_cd, hcpcs_3rd_mdfr_cd, hcpcs_4th_mdfr_cd, hcpcs_5th_mdfr_cd
-    FROM extracts.gv_rtime.ptb_noninst_line_2021
+    FROM claims_data_noninst_2021
     WHERE hcpcs_cd IN ('77063', '77067') -- Filtering for relevant mammography HCPCS codes
         AND first_srvc_dt BETWEEN '2021-01-01' AND '2021-12-31' -- Restricting data to FY 2021
 
@@ -38,7 +38,7 @@ FROM (
         NCH_CLM_TYPE_CD,
         'INST' AS clm_source,
         hcpcs_1st_mdfr_cd, hcpcs_2nd_mdfr_cd, hcpcs_3rd_mdfr_cd, hcpcs_4th_mdfr_cd, hcpcs_5th_mdfr_cd
-    FROM extracts.gv_rtime.ptb_inst_revenue_2021
+    FROM claims_data_inst_2021
     WHERE hcpcs_cd IN ('77063', '77067') 
         AND first_srvc_dt BETWEEN '2021-01-01' AND '2021-12-31'
 );
